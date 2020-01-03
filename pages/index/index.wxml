@@ -1,0 +1,21 @@
+<!--pages/index/index.wxml-->
+<import src='../../templates/songList/songList.wxml' />
+<view class="header">
+  <view class="box" bindtap="skip" data-mtype='{{old_songs.type}}'>
+    <image src="{{old_songs.pic_img[0]}}"></image>
+    <view class="name">{{old_songs.name}}</view>
+  </view>
+  <view class="box" bindtap="skip" data-mtype='{{hot_songs.type}}'>
+    <image src="{{hot_songs.pic_img[0]}}"></image>
+    <view class="name">{{hot_songs.name}}</view>
+  </view>
+</view>
+<view bindtap="skip" data-mtype='{{new_songs.type}}'>
+  <template is="songList" data="{{temp:new_songs}}"></template>
+</view>
+<view bindtap="skip" data-mtype='{{rock_songs.type}}'>
+  <template is="songList" data="{{temp:rock_songs}}"></template>
+</view>
+<view bindtap="skip" data-mtype='{{golden_songs.type}}'>
+  <template is="songList" data="{{temp:golden_songs}}"></template>
+</view>

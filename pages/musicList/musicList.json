@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTitleText": "百度音乐",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh":true,
+  "backgroundColor":"#333"
+}

@@ -1,0 +1,11 @@
+.wrap{
+  display: flex;
+  margin: 20rpx 0;
+}
+.wrap image{
+  flex: 1;
+  height: 260rpx;
+}
+.title{
+  text-align: center;
+}

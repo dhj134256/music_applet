@@ -1,0 +1,26 @@
+<!--pages/musicList/musicList.wxml-->
+<view class="wrap">
+  <image src="{{img}}" class="hd_img"></image>
+  <text class="title">{{comment}}</text>
+</view>
+<!-- <view class="play_all">全部播放</view> -->
+<button class="play_all" bindtap="all_play">全部播放</button>
+<view class="box">
+  <view wx:for='{{songlist}}' wx:key='index' class='{{index%2==0?"list1":"list"}}' bindtap="play" data-songid="{{item.songid}}" data-songindex="{{index}}">
+    <view class="songlist">
+      <view class="song_id">{{index+1}}</view>
+      <view class="song_info">
+        <view>{{item.title}}</view>
+        <view>{{item.author}}</view>
+      </view>
+      <view class="song_pic">
+        <image src="{{item.img}}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="controller">
+  <image src="../../images/musicplay.png"></image>
+  <view class="songName">{{songName}}</view>
+  <image src="{{flag?'../../images/play.png':'../../images/puase.png'}}" class="btn_play" bindtap="control_play"></image>
+</view>
